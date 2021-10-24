@@ -1,7 +1,7 @@
 # wsl-butler
 scripts to maintain your wsl installation (e.g., backup and restore, create a portable instance)
 ## initial setup
-install a Linux distribution of your choice and customize it
+install a Linux distribution of your choice and customize it, this distribution will be the base for our future deployments
 
 # install wsl-butler
 * download .ps1 files from this repository
