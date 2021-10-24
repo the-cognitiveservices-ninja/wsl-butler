@@ -1,5 +1,5 @@
 # wsl-butler
-scripts to maintain your wsl installation
+scripts to maintain your wsl installation (e.g., backup and restore, create a portable instance)
 ## initial setup
 install a Linux distribution of your choice and customize it
 
