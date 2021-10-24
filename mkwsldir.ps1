@@ -1,0 +1,3 @@
+mkdir WindowsSubsystemLinux
+mkdir WindowsSubsystemLinux\instances
+mkdir WindowsSubsystemLinux\images
