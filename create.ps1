@@ -1,4 +1,16 @@
-$filedate = $args[0]
-$name = $args[1]
-$filename = 'images\' + $filedate + '-' + $name +'.tgz'
-wsl --import $name instances\$name $filename  --version 2
+param(
+    [Parameter(Mandatory=$true, HelpMessage="Enter Backup Date to Restore")]
+    [ValidateNotNull()]
+    $filedate,
+    [Parameter(Mandatory=$true, HelpMessage="Enter Instance Name to Restore")]
+    [ValidateNotNull()]
+    $name
+)
+
+[string]$basePath = $env:USERPROFILE
+
+
+$filename = $basePath + '\WindowsSubsystemLinux\images\' + $filedate + '-' + $name +'.tgz'
+$instance = $basePath + '\WindowsSubsystemLinux\instances\' + $name
+Write-Host "Create instance" $name "from " $filename " to " $instance
+wsl --import $name $instance $filename  --version 2
