@@ -27,6 +27,7 @@ example: .\backup.ps1 Development
 ```
 wsl -l -v
 wsl --terminate <running instance>
+wsl --unregister <running instance>
 ```
 * install backup create before
 ```
