@@ -45,8 +45,4 @@ wsl -s <descriptive name>
 ```
 don´t forget to backup frequently 
 
-## Hint: powerline-go
-to have an informative and good-looking prompt, consider [install powerline-go](https://github.com/justjanne/powerline-go#installation) in your Linux image
-
-![Powerline Prompt](https://raw.github.com/holgerimbery/wsl-butler/main/powerline-go.png)
 
