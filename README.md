@@ -5,10 +5,14 @@ install a Linux distribution of your choice and customize it, this distribution 
 
 # install wsl-butler
 * download .ps1 files from this repository
+```
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/holgerimbery/wsl-butler/main/create.ps1 -OutFile .\create.ps1
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/holgerimbery/wsl-butler/main/backup.ps1 -OutFile .\backup.ps1
+```
 
 * Create a folder WindowsSubsystemLinux and two subfolders in your user-folder
 ```
-.\mkwsldir.ps1
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/holgerimbery/wsl-butler/main/mkwsldir.ps1 -OutFile .\mkwsldir.ps1; .\mkwsldir.ps1
 ```
 folder _instances_ will hold your WSL installations, folder _images_ your backups  
 
