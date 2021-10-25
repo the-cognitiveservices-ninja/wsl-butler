@@ -4,6 +4,9 @@ param(
     $name
 )
 
+[string]$basePath = $env:USERPROFILE
+
+
 $filedate = (Get-Date).tostring("yyyy-MM-dd_HH-MM")
 $filename = 'images\' + $filedate + '-' + $name +'.tgz'
 $target = $basepath + '\WindowsSubsystemLinux\' + $filename
