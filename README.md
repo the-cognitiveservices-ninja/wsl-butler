@@ -18,6 +18,7 @@ folder _instances_ will hold your WSL installations, folder _images_ your backup
 
 * create an image of your Linux distro
 ```
+wsl -l -v
 .\backup.ps1
 ```
 Hint: you can pass the instance to backup as a commandline parameter  
