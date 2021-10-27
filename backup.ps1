@@ -7,7 +7,7 @@ param(
 [string]$basePath = $env:USERPROFILE
 
 
-$filedate = (Get-Date).tostring("yyyy-MM-dd_HH-MM")
+$filedate = (Get-Date).tostring("yyyy-MM-dd_HH-mm")
 $filename = 'images\' + $filedate + '-' + $name +'.tgz'
 $target = $basepath + '\WindowsSubsystemLinux\' + $filename
 Write-Host "Create backup of " $name " to " $target
