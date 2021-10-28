@@ -45,4 +45,16 @@ wsl -s <descriptive name>
 ```
 don´t forget to backup frequently 
 
+# USB-storage
+use scripts with the appendix *_usb*.
+to create a instance from an backup stored on a thumb drive or  
+to create a backup on a thumb drive.  
+Directory structure is  
+
+root  
+\WindowsSubsystemLinux\  
+\WindowsSubsystemLinux\images
+
+
+
 
