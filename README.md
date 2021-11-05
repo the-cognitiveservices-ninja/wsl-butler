@@ -1,7 +1,19 @@
 # wsl-butler
 scripts to maintain your wsl installation (e.g., backup and restore, create a portable instance)
 ## initial setup
-install a Linux distribution of your choice and customize it, this distribution will be the base for our future deployments
+install a Linux distribution of your choice and customize it, this distribution will be the base for our future deployments  
+* optional step (elevated shell)
+```
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all
+```
+* install WSL via *winget*  (elevated shell)
+```
+winget install -s msstore 'Windows Subsystem for Linux Preview'
+```
+* install Distri of your choice, e.g. Ubuntu 20.04 LTS
+```
+winget search -s msstore "Ubuntu 20.04 LTS"
+```
 
 # install wsl-butler
 * download .ps1 files from this repository
