@@ -77,7 +77,8 @@ wsl -d Ubuntu-20.04 -u holger -e id -u
 ```
 Get-ItemProperty Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\*\ DistributionName | Where-Object -Property DistributionName -eq Ubuntu-20.04 | Set-ItemProperty -Name DefaultUid -Value 1000
 ```
-
+## the_ultimate_ thumb drive
+a azure storage account with a fileshare
 
 
 
