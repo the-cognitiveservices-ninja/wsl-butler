@@ -69,6 +69,11 @@ root
 
 # Tips & Hints
 ## defaultuser missing
+* get uid
+```
+wsl -d Ubuntu-20.04 -u holger -e id -u
+```
+* store uid as default user
 ```
 Get-ItemProperty Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\*\ DistributionName | Where-Object -Property DistributionName -eq Ubuntu-20.04 | Set-ItemProperty -Name DefaultUid -Value 1000
 ```
